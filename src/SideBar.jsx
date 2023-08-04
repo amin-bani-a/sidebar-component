@@ -6,8 +6,9 @@ import { FaTimes } from "react-icons/fa";
 
 const SideBar = () => {
   const { isSidebarOpen, closeSideBar } = useGlobalContext();
+  // console.log(isSidebarOpen);
   return (
-    <aside className="sidebar">
+    <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
       <div className="sidebar-header">
         <img src={logo} alt="logo" className="logo" />
         <button className="close-btn" onClick={closeSideBar}>

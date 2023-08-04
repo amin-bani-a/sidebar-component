@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
 
   const openSideBar = () => {
     setIsSidebarOpen(true);
+    console.log(isSidebarOpen);
   };
   const closeSideBar = () => {
     setIsSidebarOpen(false);
